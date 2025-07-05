@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uas_mobile">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Aplikasi Laundry"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".DetailTransaksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FormTransaksiActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="false" />
+        <activity android:name=".TransaksiActivity" />
+        <activity
+            android:name=".FormLayananActivity"
+            android:exported="false" />
+        <activity android:name=".FormEditLayananActivity" />
+        <activity
+            android:name=".LayananActivity"
+            android:exported="false" /> <!-- Activity Utama -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Halaman Kelola Pelanggan -->
+        <activity android:name=".PelangganActivity" />
+        <activity android:name=".FormPelangganActivity" />
+        <activity android:name=".FormEditPelangganActivity" />
+        <activity android:name=".DetailPelangganActivity" />
+    </application>
+
+</manifest>

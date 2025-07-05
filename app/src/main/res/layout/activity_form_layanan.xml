@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_kuning"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="8dp">
+
+        <TextView
+            android:id="@+id/txtJudulFormLayanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form Tambah Layanan"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Layanan"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtNamaLayanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan nama layanan"
+            android:padding="12dp"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:drawableStart="@drawable/ic_layanan"
+            android:textColorHint="#888888" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga per Kg"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edtHargaLayanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contoh: 5000"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:drawableStart="@drawable/ic_hargaperkg"
+            android:textColorHint="#888888" />
+
+        <Button
+            android:id="@+id/btnSimpanLayanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIMPAN"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="14dp" />
+    </LinearLayout>
+</ScrollView>

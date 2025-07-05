@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_kuning"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Transaksi"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="4dp">
+
+            <TextView android:text="Nama Pelanggan:" style="@style/LabelText" />
+            <TextView android:id="@+id/txtDetailPelanggan" style="@style/ValueText" />
+
+            <TextView android:text="Layanan:" style="@style/LabelText" />
+            <TextView android:id="@+id/txtDetailLayanan" style="@style/ValueText" />
+
+            <TextView android:text="Harga per Kg:" style="@style/LabelText" />
+            <TextView android:id="@+id/txtDetailHarga" style="@style/ValueText" />
+
+            <TextView android:text="Berat (Kg):" style="@style/LabelText" />
+            <TextView android:id="@+id/txtDetailBerat" style="@style/ValueText" />
+
+            <TextView android:text="Total Harga:" style="@style/LabelText" />
+            <TextView android:id="@+id/txtDetailTotal" style="@style/ValueText" />
+
+            <TextView android:text="Tanggal Transaksi:" style="@style/LabelText" />
+            <TextView android:id="@+id/txtDetailTanggalTransaksi" style="@style/ValueText" />
+
+            <TextView android:text="Tanggal Selesai:" style="@style/LabelText" />
+            <TextView android:id="@+id/txtDetailTanggalSelesai" style="@style/ValueText" />
+
+            <TextView android:text="Status:" style="@style/LabelText" />
+            <TextView android:id="@+id/txtDetailStatus" style="@style/ValueText" />
+
+            <TextView android:text="Status Pembayaran:" style="@style/LabelText" />
+            <TextView android:id="@+id/txtDetailStatusPembayaran" style="@style/ValueText" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
